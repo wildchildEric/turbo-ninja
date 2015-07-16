@@ -20,10 +20,9 @@
 </head>
 
 <body>
-
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                     aria-expanded="false" aria-controls="navbar">
@@ -32,28 +31,37 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><i class="fa fa-futbol-o"></i> 球王俱乐部</a>
+            <a class="navbar-brand" href="/"><i class="fa fa-futbol-o" style="color: black;"></i> 球王俱乐部</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+                <li class="active"><a href="#"><i class="fa fa-home"></i> 主页</a></li>
+                <li><a href="#about"><i class="fa fa-info"></i> 关于</a></li>
+                <li><a href="#contact"><i class="fa fa-phone"></i> 联系我们</a></li>
+                <li><a href="#apps"><i class="fa fa-mobile"></i> 下载客户端</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜索" name="srch-term"
+                                   id="srch-term">
+
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
-                        <i class="fa fa-user"></i> 游客 <span class="caret"></span></a>
+                        <i class="fa fa-user"></i> 游客 <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" style="color: #3ca353;"></i> 登陆</a></li>
                         <li role="separator" class="divider"></li>
-                        <%--<li class="dropdown-header">Nav header</li>--%>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#"><i class="fa fa-user-plus" style="color: #3ca353;"></i> 注册</a></li>
                     </ul>
                 </li>
             </ul>
@@ -62,9 +70,31 @@
     </div>
 </nav>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-12">
+        <div class="col-xs-12 col-sm-2">
+            <ul class="nav nav-stacked affix-top  well" id="sidebar"
+            ">
+            <li class=""><a href="#sec1" style="color: #3ca353;"><i class="fa fa-user"></i> 球员</a></li>
+            <li class="active"><a href="#sec0" style="color: #3ca353;"><i class="fa fa-university"></i> 球场</a></li>
+            <li class=""><a href="#sec1" style="color: #3ca353;"><i class="fa fa-users"></i> 球队</a></li>
+            <li><a href="#sec2" style="color: #3ca353;"><i class="fa fa-trophy"></i> 球赛</a></li>
+            <li><a href="#sec3" style="color: #3ca353;"><i class="fa fa-comments"></i> 球王说</a></li>
+            </ul>
+            <% for (int i = 0; i < 3; i += 1) { %>
+            <div class="well well-lg">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="//placehold.it/180x100" class="img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        Some text here <%= i %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <div class="col-xs-12 col-sm-7">
             <div class="jumbotron">
                 <h1>Hello, world!</h1>
 
@@ -81,7 +111,6 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
 
@@ -91,7 +120,6 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
 
@@ -101,7 +129,6 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
 
@@ -111,7 +138,6 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
 
@@ -121,7 +147,6 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
 
@@ -137,13 +162,25 @@
 
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
-                <!--/.col-xs-6.col-lg-4-->
             </div>
-            <!--/row-->
+
         </div>
-        <!--/.col-xs-12.col-sm-9-->
+        <div class="col-xs-12 col-sm-3">
+            <% for (int i = 0; i < 6; i += 1) { %>
+            <div class="well well-lg">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="//placehold.it/180x100" class="img-responsive">
+                    </div>
+                    <div class="col-sm-6">
+                        Some text here <%= i %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
     </div>
-    <!--/row-->
+
     <hr>
     <footer>
         <p>&copy; Company 2014</p>
