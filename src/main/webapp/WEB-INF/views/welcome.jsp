@@ -13,7 +13,7 @@
     <link rel="icon" href="../../favicon.ico">
     <title>Template for Bootstrap</title>
     <link href="/assets/bootstrap-3.3.5/css/bootstrap.css" type="text/css" rel="stylesheet" charset="utf-8">
-    <link rel="stylesheet" href="/assets/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link href="/assets/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/stylesheets/application.css" rel="stylesheet">
     <script src="/assets/javascripts/jquery-1.11.3.min.js"></script>
     <script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
