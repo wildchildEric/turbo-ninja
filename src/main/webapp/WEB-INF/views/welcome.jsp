@@ -1,16 +1,18 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lizhe
-  Date: 15/7/16
-  Time: 下午2:59
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title></title>
-</head>
+<!DOCTYPE html>
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<html lang="en">
+
 <body>
-hello world~~
+<c:url value="/resources/text.txt" var="url"/>
+<spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl" />
+Spring URL: ${springUrl} at ${time}
+<br>
+JSTL URL: ${url}
+<br>
+Message: ${message}
 </body>
+
 </html>
