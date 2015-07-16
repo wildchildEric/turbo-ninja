@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <html lang="en">
-
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Off Canvas Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
     <link href="/assets/bootstrap-3.3.5/css/bootstrap.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="/assets/bootstrap-3.3.5/css/bootstrap-theme.css" type="text/css" rel="stylesheet" charset="utf-8">
-    <script src="/assets/javascripts/jquery-1.11.3.min.js"></script>
-    <script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="/assets/stylesheets/offcanvas.css" rel="stylesheet">
+    <script src="/assets/javascripts/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -25,79 +37,132 @@
             </button>
             <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <!--/.navbar-collapse -->
+        <!-- /.nav-collapse -->
     </div>
+    <!-- /.container -->
 </nav>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1>Hello, world!</h1>
-
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a
-            jumbotron and three supporting pieces of content. Use it as a starting point to create something more
-            unique.</p>
-
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
-</div>
+<!-- /.navbar -->
 
 <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Heading</h2>
 
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
+    <div class="row row-offcanvas row-offcanvas-right">
 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Heading</h2>
-
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
-
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-
-            <h2>Heading</h2>
-
-            <p>
-                <c:url value="/resources/text.txt" var="url"/>
-                <spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl"/>
-                Spring URL: ${springUrl} at ${time}
-                <br>
-                JSTL URL: ${url}
-                <br>
-                Message: ${message}
+        <div class="col-xs-12 col-sm-9">
+            <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
             </p>
+            <div class="jumbotron">
+                <h1>Hello, world!</h1>
 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some
+                    responsive-range viewport sizes to see it in action.</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+                <div class="col-xs-6 col-lg-4">
+                    <h2>Heading</h2>
+
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna mollis euismod. Donec sed odio dui. </p>
+
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!--/.col-xs-6.col-lg-4-->
+            </div>
+            <!--/row-->
         </div>
+        <!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item">Link</a>
+            </div>
+        </div>
+        <!--/.sidebar-offcanvas-->
     </div>
+    <!--/row-->
 
     <hr>
 
     <footer>
         <p>&copy; Company 2014</p>
     </footer>
+
 </div>
-<!-- /container -->
+<!--/.container-->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/javascripts/jquery-1.11.3.min.js"></script>
+<script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/javascripts/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/javascripts/offcanvas.js"></script>
 </body>
 </html>
