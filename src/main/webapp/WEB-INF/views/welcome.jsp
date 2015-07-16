@@ -10,13 +10,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-    <title>Template for Bootstrap</title>
-    <link href="/assets/bootstrap-3.3.5/css/bootstrap.css" type="text/css" rel="stylesheet" charset="utf-8">
-    <link href="/assets/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/stylesheets/application.css" rel="stylesheet">
-    <script src="/assets/javascripts/jquery-1.11.3.min.js"></script>
-    <script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <link rel="icon" href="<c:url value="/favicon.ico"/>">
+    <title>球王俱乐部</title>
+    <link href="<c:url value="/assets/bootstrap-3.3.5/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="/assets/font-awesome-4.3.0/css/font-awesome.min.css"/>" rel="stylesheet">
+    <link href="<c:url value="/assets/stylesheets/application.css"/>" rel="stylesheet">
+    <script src="<c:url value="/assets/javascripts/jquery-1.11.3.min.js"/>"></script>
+    <script src="<c:url value="/assets/bootstrap-3.3.5/js/bootstrap.min.js"/>"></script>
 </head>
 
 <body>
