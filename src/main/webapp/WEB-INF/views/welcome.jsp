@@ -12,11 +12,9 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
     <link href="/assets/bootstrap-3.3.5/css/bootstrap.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link href="/assets/bootstrap-3.3.5/css/bootstrap-theme.css" type="text/css" rel="stylesheet" charset="utf-8">
     <link rel="stylesheet" href="/assets/font-awesome-4.3.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
     <link href="/assets/stylesheets/application.css" rel="stylesheet">
     <script src="/assets/javascripts/jquery-1.11.3.min.js"></script>
     <script src="/assets/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -55,13 +53,8 @@
 </nav>
 
 <div class="container">
-
     <div class="row">
-
         <div class="col-xs-12 col-sm-12">
-            <p class="pull-right visible-xs">
-                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-            </p>
             <div class="jumbotron">
                 <h1>Hello, world!</h1>
 
@@ -121,7 +114,6 @@
                 <!--/.col-xs-6.col-lg-4-->
                 <div class="col-xs-6 col-lg-4">
                     <h2>Heading</h2>
-
                     <p>
                         <c:url value="/resources/text.txt" var="url"/>
                         <spring:url value="/resources/text.txt" htmlEscape="true" var="springUrl"/>
@@ -131,7 +123,6 @@
                         <br>
                         Message: ${message}
                     </p>
-
                     <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                 </div>
                 <!--/.col-xs-6.col-lg-4-->
