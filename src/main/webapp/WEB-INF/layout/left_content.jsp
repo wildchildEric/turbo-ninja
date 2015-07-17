@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <div class="affix-top" id="sidebar">
+    <%--<div class="alert alert-success" role="alert">...</div>--%>
     <ul class="nav nav-stacked">
         <li class=""><a href="#sec1" style="color: #3ca353;"><i class="fa fa-home"></i> 我的主页</a></li>
         <li class=""><a href="#sec1" style="color: #3ca353;"><i class="fa fa-user"></i> 球员</a></li>
