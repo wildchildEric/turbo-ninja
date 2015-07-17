@@ -13,12 +13,16 @@
     <meta name="author" content="">
     <link rel="icon" href="<c:url value="/favicon.ico"/>">
     <title>球王俱乐部</title>
+    <%--stylesheet--%>
     <link href="<c:url value="/assets/bootstrap-3.3.5/css/bootstrap.css"/>" rel="stylesheet">
     <link href="<c:url value="/assets/font-awesome-4.3.0/css/font-awesome.min.css"/>" rel="stylesheet">
     <link href="<c:url value="/assets/stylesheets/application.css"/>" rel="stylesheet">
+    <link href="<c:url value="/assets/stylesheets/pace.css"/>" rel="stylesheet">
+    <%--javascript--%>
     <script src="<c:url value="/assets/javascripts/jquery-1.11.3.min.js"/>"></script>
     <script src="<c:url value="/assets/bootstrap-3.3.5/js/bootstrap.min.js"/>"></script>
     <script src="<c:url value="/assets/javascripts/application.js"/>"></script>
+    <script src="<c:url value="/assets/javascripts/pace.min.js"/>"></script>
 </head>
 
 <body>
