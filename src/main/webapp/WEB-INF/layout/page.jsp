@@ -30,6 +30,21 @@
 </nav>
 <div class="container-fluid">
     <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <div>
+                <ol class="breadcrumb">
+                    <li><a href="#" style="color: #3ca353">首页</a></li>
+                    <li><a href="#" style="color: #3ca353">球赛</a></li>
+                    <li class="active">某球赛</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="container-fluid">
+    <div class="row">
         <div class="col-xs-12 col-sm-2">
             <t:insertAttribute name="left_content"/>
         </div>
