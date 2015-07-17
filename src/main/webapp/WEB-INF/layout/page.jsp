@@ -18,6 +18,7 @@
     <link href="<c:url value="/assets/stylesheets/application.css"/>" rel="stylesheet">
     <script src="<c:url value="/assets/javascripts/jquery-1.11.3.min.js"/>"></script>
     <script src="<c:url value="/assets/bootstrap-3.3.5/js/bootstrap.min.js"/>"></script>
+    <script src="<c:url value="/assets/javascripts/application.js"/>"></script>
 </head>
 
 <body>
