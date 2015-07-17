@@ -36,7 +36,7 @@ footer {
 
 #sidebar li.active {
     border: 0 #3ca353 solid;
-    border-right-width: 5px;
+    border-right-width: 4px;
 }
 
 /* top navigation bar customize */

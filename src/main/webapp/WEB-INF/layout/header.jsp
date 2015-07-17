@@ -12,8 +12,7 @@
 <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
         <li class="active"><a href="#"><i class="fa fa-home"></i> 首页</a></li>
-        <li><a href="#about"><i class="fa fa-info"></i> 关于</a></li>
-        <li><a href="#contact"><i class="fa fa-phone"></i> 联系我们</a></li>
+        <li><a href="#about"><i class="fa fa-info"></i> 关于我们</a></li>
         <li><a href="#apps"><i class="fa fa-mobile"></i> 下载客户端</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
