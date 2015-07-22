@@ -8,10 +8,9 @@
         <a href="#">Google+</a>
     </div>
 </div>
-
+<hr>
 <div class="row" id="footer">
     <div class="col-sm-6">
-
     </div>
     <div class="col-sm-6">
         <p>
@@ -19,11 +18,4 @@
         </p>
     </div>
 </div>
-
-<hr>
-
-<h4 class="text-center">
-    <a href="http://bootply.com/96266" target="ext">Download this Template @Bootply</a>
-</h4>
-
 <hr>

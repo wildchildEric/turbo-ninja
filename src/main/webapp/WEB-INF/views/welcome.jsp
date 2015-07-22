@@ -8,8 +8,7 @@
     <div class="col-sm-5">
 
         <div class="panel panel-default">
-            <div class="panel-thumbnail"><img src="/assets/example/bg_5.jpg"
-                                              class="img-responsive"></div>
+            <div class="panel-thumbnail"><img src="//placehold.it/640x640" class="img-responsive"></div>
             <div class="panel-body">
                 <p class="lead">Urbanization</p>
 
@@ -164,8 +163,7 @@
         </div>
 
         <div class="panel panel-default">
-            <div class="panel-thumbnail"><img src="/assets/example/bg_4.jpg"
-                                              class="img-responsive"></div>
+            <div class="panel-thumbnail"><img src="//placehold.it/640x640" class="img-responsive"></div>
             <div class="panel-body">
                 <p class="lead">Social Good</p>
 

@@ -13,14 +13,4 @@
         <put-attribute name="main_content" value="/WEB-INF/views/welcome.jsp"/>
     </definition>
 
-    <!--<definition name="new_base" template="/WEB-INF/layout/application.jsp">-->
-        <!--<put-attribute name="sidebar" value="/WEB-INF/layout/sidebar.jsp"/>-->
-        <!--<put-attribute name="top_nav" value="/WEB-INF/layout/top_nav.jsp"/>-->
-        <!--<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>-->
-    <!--</definition>-->
-
-    <!--<definition name="new_template" extends="new_base">-->
-        <!--<put-attribute name="main_content" value="/WEB-INF/views/welcome.jsp"/>-->
-    <!--</definition>-->
-
 </tiles-definitions>

@@ -12,8 +12,7 @@
     <%--stylesheet--%>
     <link href="<c:url value="/assets/bootstrap-3.3.5/css/bootstrap.min.css"/>" rel="stylesheet">
     <link href="<c:url value="/assets/font-awesome-4.3.0/css/font-awesome.min.css"/>" rel="stylesheet">
-    <link href="<c:url value="/assets/stylesheets/pace.css"/>" rel="stylesheet">
-    <link href="<c:url value="/assets/stylesheets/styles.css"/>" rel="stylesheet">
+    <link href="<c:url value="/assets/stylesheets/application.css"/>" rel="stylesheet">
     <%--javascript--%>
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,7 +27,7 @@
                 <t:insertAttribute name="sidebar"/>
             </div>
             <div class="column col-sm-10 col-xs-11" id="main">
-                <div class="navbar navbar-blue navbar-static-top">
+                <div class="navbar navbar-custom navbar-static-top">
                     <t:insertAttribute name="top_nav"/>
                 </div>
                 <div class="padding">
@@ -75,6 +74,6 @@
 <%--javascript--%>
 <script src="<c:url value="/assets/javascripts/jquery-1.11.3.min.js"/>"></script>
 <script src="<c:url value="/assets/bootstrap-3.3.5/js/bootstrap.min.js"/>"></script>
-<script src="<c:url value="/assets/javascripts/scripts.js"/>"></script>
+<script src="<c:url value="/assets/javascripts/application.js"/>"></script>
 </body>
 </html>
