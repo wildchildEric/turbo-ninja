@@ -124,7 +124,15 @@ hr {
   padding-left: 30px;
 }
 
-.navbar-custom li > a:hover, .navbar-custom li > a:focus, .navbar-custom .open, .navbar-custom .open > a, .navbar-custom .open > a:hover, .navbar-custom .open > a:focus {
+.navbar-custom .open,
+.navbar-custom .open > a {
+  background-color: white;
+}
+
+.navbar-custom li > a:hover,
+.navbar-custom li > a:focus,
+.navbar-custom .open > a:hover,
+.navbar-custom .open > a:focus {
   background-color: $primary-highlight-color;
   color: #fff;
 }
