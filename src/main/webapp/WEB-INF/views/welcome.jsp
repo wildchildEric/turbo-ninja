@@ -27,12 +27,9 @@
                 Examples</h4></div>
             <div class="panel-body">
                 <div class="list-group">
-                    <a href="http://bootply.com/tagged/modal" class="list-group-item">Modal /
-                        Dialog</a>
-                    <a href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime
-                        Examples</a>
-                    <a href="http://bootply.com/tagged/datatable" class="list-group-item">Data
-                        Grids</a>
+                    <a href="http://bootply.com/tagged/modal" class="list-group-item">Modal / Dialog</a>
+                    <a href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime Examples</a>
+                    <a href="http://bootply.com/tagged/datatable" class="list-group-item">Data Grids</a>
                 </div>
             </div>
         </div>
@@ -95,11 +92,10 @@
                 <h4>Sign-up</h4>
 
                 <div class="input-group text-center">
-                    <input type="text" class="form-control input-lg"
-                           placeholder="Enter your email address">
-                                            <span class="input-group-btn"><button class="btn btn-lg btn-primary"
-                                                                                  type="button">OK
-                                            </button></span>
+                    <input type="text" class="form-control input-lg" placeholder="Enter your email address">
+                        <span class="input-group-btn">
+                            <button class="btn btn-lg btn-primary" type="button">OK</button>
+                        </span>
                 </div>
             </form>
         </div>
